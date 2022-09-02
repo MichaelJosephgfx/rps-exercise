@@ -3,8 +3,7 @@
 //Computer's Choice
 
 function getComputerChoice(Rock, Paper, Scissors) {
-    let integer = '';
-    integer = Math.floor(Math.random()*3) + 1;
+    let integer = Math.floor(Math.random()*3) + 1;
     if (integer === 1) {
         return 'rock';
     }
@@ -17,3 +16,14 @@ function getComputerChoice(Rock, Paper, Scissors) {
 }
 
 getComputerChoice();
+
+//Player's Choice
+
+function playRound (playerSelection, computerSelection) {
+    const rock = 'rock';
+    const paper = 'paper';
+    const scissors = 'scissors';
+    const answer = ('rock', 'paper', 'scissors');
+
+return playerSelection;
+}
