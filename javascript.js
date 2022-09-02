@@ -1,6 +1,6 @@
 //RPS Exercise
 
-//Computer's Choice
+//Computer's Choice................................
 
 function getComputerChoice(Rock, Paper, Scissors) {
     let integer = Math.floor(Math.random()*3) + 1;
@@ -15,15 +15,20 @@ function getComputerChoice(Rock, Paper, Scissors) {
     }
 }
 
-getComputerChoice();
 
-//Player's Choice
+//Player's Choice........................................
 
 function playRound (playerSelection, computerSelection) {
-    const rock = 'rock';
-    const paper = 'paper';
-    const scissors = 'scissors';
-    const answer = ('rock', 'paper', 'scissors');
+    let rock = 'rock';
+    let paper = 'paper';
+    let scissors = 'scissors';
+    let answer = rock + paper + scissors;
+    
+    if (playerSelection) {
+        return (answer);
+    }
 
-return playerSelection;
+    else {
+        return (getComputerChoice());
+    }
 }
