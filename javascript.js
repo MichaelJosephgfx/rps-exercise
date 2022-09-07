@@ -16,19 +16,12 @@ function getComputerChoice(Rock, Paper, Scissors) {
 }
 
 
+
+
 //Player's Choice........................................
 
 function playRound (playerSelection, computerSelection) {
-    let rock = 'rock';
-    let paper = 'paper';
-    let scissors = 'scissors';
-    let answer = rock + paper + scissors;
-    
-    if (playerSelection) {
-        return (answer);
-    }
-
-    else {
-        return (getComputerChoice());
-    }
+    return 'You won! Paper beats rock.'
 }
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
