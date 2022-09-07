@@ -8,10 +8,10 @@ function getComputerChoice(Rock, Paper, Scissors) {
         return 'rock';
     }
     else if (integer === 2) {
-        return 'paper';
+        return 'paper'.toLowerCase();
     }
     else {
-        return 'scissors';
+        return 'scissors'.toLowerCase();
     }
 }
 
