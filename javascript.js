@@ -46,18 +46,20 @@ let tie = "It's a tie!";
 let compDefeat = "You won the game!";
 let playerDefeat = "You lost the game!";
 
+let gameResult = playRound();
+    
 //GAME.......................................................
 
 function game() {
     for (let i = 1; i < 5; i++) {
-        
+        console.log(`Round number: ${i}`);
         let playerSelection = prompt('Make your choice: rock, paper, or scissors.').toLowerCase();
         let computerSelection = getComputerChoice();
-        playRound(playerSelection, computerSelection);
-        console.log(`${i}`);
         console.log(playRound(playerSelection, computerSelection));
+        playRound(playerSelection, computerSelection);   
     }
     
 }
 
 game();
+
