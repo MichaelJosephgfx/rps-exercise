@@ -46,6 +46,7 @@ function playRound (playerSelection, computerSelection) {
     }
 } 
 
+
 /*
 function winner(playerSelection, computerSelection) {
     playRound();
@@ -59,6 +60,7 @@ function winner(playerSelection, computerSelection) {
         return `Looks like a tie! ${++tieScore}`;
     }
 } */
+
 let playerScore = 0;
 let compScore = 0;
 let tieScore = 0;
@@ -71,11 +73,9 @@ function game() {
         console.log(`Round number: ${i}`);
         let playerSelection = prompt('Make your choice: rock, paper, or scissors.').toLowerCase();
         let computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-    
-    
-        
+        console.log(playRound(playerSelection, computerSelection)); 
     }
+
 }
 console.log(game());
 
