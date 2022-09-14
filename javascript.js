@@ -2,7 +2,6 @@
 
 // GLOBAL SCOPE VARIABLES
 
-
 let playerWins = "You won this round!";
 let compWins = "You lost, the computer won this one!";
 let tie = "GAME OVER, IT'S A TIE!";
@@ -24,10 +23,6 @@ function getComputerChoice() {
         return 'scissors'.toLowerCase();
     }
 }
-/* DELETED THESE - they are already included in the Game() function.
-let playerSelection = prompt('Make your choice: rock, paper, or scissors.').toLowerCase();
-let computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection)); */
 
 //Player's Choice........................................
 
@@ -46,20 +41,6 @@ function playRound (playerSelection, computerSelection) {
     }
 } 
 
-
-/*
-function winner(playerSelection, computerSelection) {
-    playRound();
-    if (playerSelection < computerSelection) {
-        return `player scored! ${++playerScore}`;
-    }
-    else if (computerSelection < playerSelection) {
-        return `comp scored! ${++compScore}`;
-    }
-    else {
-        return `Looks like a tie! ${++tieScore}`;
-    }
-} */
 
 let playerScore = 0;
 let compScore = 0;
