@@ -5,9 +5,9 @@
 
 let playerWins = "You won this round!";
 let compWins = "You lost, the computer won this one!";
-let tie = "It's a tie!";
-let compDefeat = "You won the game!";
-let playerDefeat = "You lost the game!";
+let tie = "GAME OVER, IT'S A TIE!";
+let compDefeat = "GAME OVER, YOU WON!";
+let playerDefeat = "GAME OVER, YOU LOST....";
 
 
 //Computer's Choice................................
@@ -24,7 +24,7 @@ function getComputerChoice() {
         return 'scissors'.toLowerCase();
     }
 }
-/*
+/* DELETED THESE - they are already included in the Game() function.
 let playerSelection = prompt('Make your choice: rock, paper, or scissors.').toLowerCase();
 let computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection)); */
@@ -74,6 +74,18 @@ function game() {
         let playerSelection = prompt('Make your choice: rock, paper, or scissors.').toLowerCase();
         let computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection)); 
+        
+
+    }
+
+    if (playerScore > compScore) {
+        return compDefeat;
+    }   else if (playerScore < compScore) {
+        return playerDefeat;
+    }   else if (playerScore===compScore || tieScore > playerScore+compScore) {
+        return tie;
+    }   else {
+        return tie;
     }
 
 }
